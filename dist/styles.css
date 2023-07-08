@@ -1,0 +1,50 @@
+body {
+    background-image: url("https://source.unsplash.com/LU_fCezP9-o");
+    background-size: cover;
+}
+
+header {
+    background-color: pink;
+    padding: 30px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    font-family: 'Caprasimo', serif;
+}
+
+#content {
+    margin-top: 20px;
+    background-color: antiquewhite;
+    padding: 30px;
+    opacity: 1;
+}
+
+header h1 {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+/* #top-nav li {
+    display: inline;
+    margin: 10px;
+} */
+
+.active {
+    color: gray;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.candy-image {
+    width: 100px;
+    height: 100px;
+}

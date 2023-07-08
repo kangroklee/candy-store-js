@@ -1,7 +1,24 @@
-const content = document.querySelector('div.content');
-const msg = createElement('p');
+import homepage from './homepage.js';
+import { showCupboard } from './ourcollection.js';
+// import contact from './contactus.js';
 
-msg.textContent = "Initial Commit";
-content.appendChild(msg);
+const content = document.querySelector('#content');
 
-console.log
+const nav = document.querySelector('#top-nav');
+nav.addEventListener('click', navClick);
+
+function navClick(e) {
+    content.replaceChildren(); //empties content container
+    const activePage = document.querySelector('.active');
+    activePage.classList.toggle('active');
+    e.target.classList.toggle('active');
+    if(e.target === nav.querySelector('li:nth-child(1)')) {
+        homepage();
+    }
+    if(e.target === nav.querySelector('li:nth-child(2)')) {
+        showCupboard();
+    }
+    if(e.target === nav.querySelector('li:nth-child(3)')) {
+        content.textContent = "third page blah blah";
+    }
+}
