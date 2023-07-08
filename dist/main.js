@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector("div.content"),t=createElement("p");t.textContent="Initial Commit",e.appendChild(t),console.log})();
